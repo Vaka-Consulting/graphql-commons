@@ -1,6 +1,6 @@
 {
   "name": "@vakaconsulting/graphql-commons",
-  "version": "0.0.3",
+  "version":"0.0.0-beta",
   "description": "",
   "scripts": {
     "compile": "tsc",
