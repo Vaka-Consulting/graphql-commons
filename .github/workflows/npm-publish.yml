@@ -39,11 +39,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
-          scope: '@vaka-consulting'
+          scope: '@vakaconsulting'
 
       - run: npm i
       - run: sed -i 's/"version":.*/"version":"${{ github.event.release.tag_name }}",/g' package.json
-      - run: sed -i 's/@vakaconsulting/@vaka-consulting/g' package.json
+      # - run: sed -i 's/@vakaconsulting/@vaka-consulting/g' package.json
       - run: npm run build
       - run: cat package.json
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
