@@ -26,7 +26,7 @@ The GraphQL Common package is a shared library based on the Apollo GraphQL serve
 To install the package, run:
 
 ```bash
-npm install @vaka-consulting/graphql-commons
+npm install @vakaconsulting/graphql-commons
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ npm install @vaka-consulting/graphql-commons
 Here's a basic example of how to use the Graphql Common package:
 
 ```javascript
-const { createServer } = require('@vaka-consulting/graphql-commons');
+const { createServer } = require('@vakaconsulting/graphql-commons');
 
 // Your schema and resolvers
 const typeDefs = `...`;
