@@ -37,13 +37,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com/
-          scope: '@vaka-consulting'
+          scope: '@vakaconsulting'
 
       - run: npm i
       - run: npm run build
       - run: sed -i 's/"version":.*/"version":"${{ github.event.release.tag_name }}",/g' package.json
       - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
-      - run: npm publish --@vaka-consulting:registry=https://npm.pkg.github.com/
+      - run: npm publish --@vakaconsulting:registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
