@@ -1,5 +1,7 @@
 # GraphQL Common Package
 
+[![Publish](https://github.com/Vaka-Consulting/graphql-commons/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/Vaka-Consulting/graphql-commons/actions/workflows/npm-publish.yml)
+
 ## Overview
 
 The GraphQL Common package is a shared library based on the Apollo GraphQL server. It provides a set of common functionalities and utilities for building GraphQL APIs within the ecosystem, promoting code reusability and standardization.
